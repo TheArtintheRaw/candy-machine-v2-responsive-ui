@@ -25,6 +25,7 @@ const TOKEN_METADATA_PROGRAM_ID = new anchor.web3.PublicKey(
 );
 
 interface CandyMachineState {
+    // gatekeeper_network: PublicKey | undefined;
     authority: anchor.web3.PublicKey;
     itemsAvailable: number;
     itemsRedeemed: number;
@@ -77,6 +78,7 @@ export const awaitTransactionSignatureConfirmation = async (
         confirmations: 0,
         err: null,
     };
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let subId = 0;
     status = await new Promise(async (resolve, reject) => {
         setTimeout(() => {

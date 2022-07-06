@@ -1,27 +1,46 @@
 /* Customize your main colors in :root variables */
 :root {
   --main-background-color: #343A50;
-  --card-background-color: #804980;
+  --card-background-color: #292929;
   --countdown-background-color: #433765;
   --main-text-color:#F7F6F4;
   --title-text-color:#3CBA8B;
+}
+
+border-box{
+background: linear-gradient(90deg, rgb(182, 32, 252) 0%, rgb(20, 138, 192) 35%, rgb(28, 211, 150) 100%);
 }
 
 body{
 /*  background-color:var(--main-background-color);*/
   background: url("img/background.png");
   background-size: cover;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Playfair';
+  font-weight: bold;
   font-size: 1.1em;
+  text-transform: capitalize;
 }
 
 h2, p{
   color: var(--main-text-color);
+  text-transform: capitalize;
 }
 
 h3{
-font-weight: normal;
+font-weight: 900;
 }
 
+button.my-custom-crossmint-button {
+  background: linear-gradient(90deg, rgb(182, 32, 252) 0%, rgb(20, 138, 192) 35%, rgb(28, 211, 150) 100%);
+  justify-content: center;
+  font-family: 'Playfair';
+  font-weight: 1000;
+}
 
-
+button.mint{
+  background: linear-gradient(90deg, rgb(182, 32, 252) 0%, rgb(20, 138, 192) 35%, rgb(28, 211, 150) 100%);
+  justify-content: center;
+  font-family: 'Playfair';
+  font-weight: 1000;
+  width: 300px;
+}
